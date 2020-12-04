@@ -1,0 +1,1007 @@
+2020-10-03 23:58:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE IF EXISTS TERMS
+CREATE[*] TABLE TERMS(SERIE INT,
+	NBR INT
+	TERM1 NUMERIC(10,10)
+)"; SQL statement:
+DROP TABLE IF EXISTS TERMS
+CREATE TABLE TERMS(SERIE INT,
+	NBR INT
+	TERM1 NUMERIC(10,10)
+) [42000-200]
+2020-10-03 23:58:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" not found; SQL statement:
+INSERT INTO TERMS VALUES(1,1,2.1234567890) [42102-200]
+2020-10-03 23:58:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" not found; SQL statement:
+INSERT INTO TERMS VALUES(1,2,200.1234567890) [42102-200]
+2020-10-03 23:58:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" not found; SQL statement:
+SELECT * FROM TERMS ORDERBY SERIE ASC, NBR ASC [42102-200]
+2020-10-03 23:59:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TERMS(SERIE INT,
+	NBR INT
+	TERM1[*] NUMERIC(10,10)
+)"; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE TERMS(SERIE INT,
+	NBR INT
+	TERM1 NUMERIC(10,10)
+) [42001-200]
+2020-10-03 23:59:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE IF EXISTS TERMS
+CREATE[*] TABLE TERMS(SERIE INT,
+	NBR INT,
+	TERM1 NUMERIC(10,10)
+)"; SQL statement:
+DROP TABLE IF EXISTS TERMS
+CREATE TABLE TERMS(SERIE INT,
+	NBR INT,
+	TERM1 NUMERIC(10,10)
+) [42000-200]
+2020-10-03 23:59:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" not found; SQL statement:
+INSERT INTO TERMS VALUES(1,1,2.1234567890) [42102-200]
+2020-10-03 23:59:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" not found; SQL statement:
+INSERT INTO TERMS VALUES(1,2,200.1234567890) [42102-200]
+2020-10-03 23:59:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" not found; SQL statement:
+SELECT * FROM TERMS ORDERBY SERIE ASC, NBR ASC [42102-200]
+2020-10-04 00:00:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE IF EXISTS TERMS
+CREATE[*] TABLE TERMS(SERIE INT,
+	NBR INT,
+	TERM1 NUMERIC(10,10)
+)"; SQL statement:
+DROP TABLE IF EXISTS TERMS
+CREATE TABLE TERMS(SERIE INT,
+	NBR INT,
+	TERM1 NUMERIC(10,10)
+) [42000-200]
+2020-10-04 00:00:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "2.1234567890 (11)"; SQL statement:
+INSERT INTO TERMS VALUES(1,1,2.1234567890) [22001-200]
+2020-10-04 00:00:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "200.1234567890 (13)"; SQL statement:
+INSERT INTO TERMS VALUES(1,2,200.1234567890) [22001-200]
+2020-10-04 00:00:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM TERMS ORDERBY SERIE[*] ASC, NBR ASC"; SQL statement:
+SELECT * FROM TERMS ORDERBY SERIE ASC, NBR ASC [42000-200]
+2020-10-04 00:00:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "2.1234567890 (11)"; SQL statement:
+INSERT INTO TERMS VALUES(1,1,2.1234567890) [22001-200]
+2020-10-04 00:00:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "200.1234567890 (13)"; SQL statement:
+INSERT INTO TERMS VALUES(1,2,200.1234567890) [22001-200]
+2020-10-04 00:00:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM TERMS ORDERBY SERIE[*] ASC, NBR ASC"; SQL statement:
+SELECT * FROM TERMS ORDERBY SERIE ASC, NBR ASC [42000-200]
+2020-10-04 00:00:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "2.1234567890 (11)"; SQL statement:
+INSERT INTO TERMS VALUES(1,1,2.1234567890) [22001-200]
+2020-10-04 00:00:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "200.1234567890 (13)"; SQL statement:
+INSERT INTO TERMS VALUES(1,2,200.1234567890) [22001-200]
+2020-10-04 00:00:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM TERMS ORDERBY SERIE[*] ASC, NBR ASC"; SQL statement:
+SELECT * FROM TERMS ORDERBY SERIE ASC, NBR ASC [42000-200]
+2020-10-04 00:02:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "2.1234560000 (11)"; SQL statement:
+INSERT INTO TERMS VALUES(1,1,2.123456) [22001-200]
+2020-10-04 00:02:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "200.1234560000 (13)"; SQL statement:
+INSERT INTO TERMS VALUES(1,2,200.123456) [22001-200]
+2020-10-04 00:02:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM TERMS ORDERBY SERIE[*] ASC, NBR ASC"; SQL statement:
+SELECT * FROM TERMS ORDERBY SERIE ASC, NBR ASC [42000-200]
+2020-10-04 00:04:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "2.1234560000 (11)"; SQL statement:
+INSERT INTO TERMS VALUES(1,1,2.123456) [22001-200]
+2020-10-04 00:04:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "200.1234560000 (13)"; SQL statement:
+INSERT INTO TERMS VALUES(1,2,200.123456) [22001-200]
+2020-10-04 00:04:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM TERMS ORDERBY SERIE[*] ASC, NBR ASC"; SQL statement:
+SELECT * FROM TERMS ORDERBY SERIE ASC, NBR ASC [42000-200]
+2020-10-04 00:04:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "2.1234560000 (11)"; SQL statement:
+INSERT INTO TERMS VALUES(1,1,2.123456) [22001-200]
+2020-10-04 00:04:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "200.1234560000 (13)"; SQL statement:
+INSERT INTO TERMS VALUES(1,2,200.123456) [22001-200]
+2020-10-04 00:05:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "2.2000000000 (11)"; SQL statement:
+INSERT INTO TERMS VALUES(1,1,2.2) [22001-200]
+2020-10-04 00:05:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "200.0000000000 (13)"; SQL statement:
+INSERT INTO TERMS VALUES(1,2,200) [22001-200]
+2020-10-04 00:06:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "2.2000000000 (11)"; SQL statement:
+INSERT INTO TERMS (SERIE,NBR,TERM1) VALUES(1,1,2.2) [22001-200]
+2020-10-04 00:06:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "200.0000000000 (13)"; SQL statement:
+INSERT INTO TERMS (SERIE,NBR,TERM1) VALUES(1,2,200) [22001-200]
+2020-10-04 00:06:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "2.0000000000 (11)"; SQL statement:
+INSERT INTO TERMS (SERIE,NBR,TERM1) VALUES(1,1,2) [22001-200]
+2020-10-04 00:06:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(10, 10)": "3.0000000000 (11)"; SQL statement:
+INSERT INTO TERMS (SERIE,NBR,TERM1) VALUES(1,2,3) [22001-200]
+2020-10-04 00:06:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Scale($"10") must not be bigger than precision("2"); SQL statement:
+CREATE TABLE TERMS(SERIE INT,
+	NBR INT,
+	TERM1 NUMERIC(2,10)
+) [90051-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:6145)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5697)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8442)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8379)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+2020-10-04 00:06:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" not found; SQL statement:
+INSERT INTO TERMS (SERIE,NBR,TERM1) VALUES(1,1,2) [42102-200]
+2020-10-04 00:06:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" not found; SQL statement:
+INSERT INTO TERMS (SERIE,NBR,TERM1) VALUES(1,2,3) [42102-200]
+2020-10-04 00:06:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" not found; SQL statement:
+SELECT * FROM TERMS ORDER BY SERIE ASC, NBR ASC [42102-200]
+2020-10-04 00:08:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Scale($"6") must not be bigger than precision("5"); SQL statement:
+CREATE TABLE TERMS(SERIE INT,
+	NBR INT,
+	TERM1 NUMERIC(5,6)
+) [90051-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:6145)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5697)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8442)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8379)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+2020-10-04 00:08:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" not found; SQL statement:
+INSERT INTO TERMS (SERIE,NBR,TERM1) VALUES(1,1,2.12) [42102-200]
+2020-10-04 00:08:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" not found; SQL statement:
+INSERT INTO TERMS (SERIE,NBR,TERM1) VALUES(1,2,3.34) [42102-200]
+2020-10-04 00:08:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" not found; SQL statement:
+SELECT * FROM TERMS ORDER BY SERIE ASC, NBR ASC [42102-200]
+2020-10-04 00:10:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(11, 10)": "20.1234567890 (12)"; SQL statement:
+INSERT INTO TERMS (SERIE,NBR,TERM1) VALUES(1,1,20.1234567890) [22001-200]
+2020-10-04 00:10:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TERM1 DECIMAL(11, 10)": "30.0987654321 (12)"; SQL statement:
+INSERT INTO TERMS (SERIE,NBR,TERM1) VALUES(1,2,30.0987654321) [22001-200]
+2020-10-04 00:12:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "NBR" must be in the GROUP BY list; SQL statement:
+SELECT SUM(TERM1) FROM TERMS ORDER BY SERIE ASC, NBR ASC [90016-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.updateAggregate(ExpressionColumn.java:182)
+	at org.h2.command.dml.Select.updateAgg(Select.java:545)
+	at org.h2.command.dml.Select.gatherGroup(Select.java:525)
+	at org.h2.command.dml.Select.queryGroup(Select.java:487)
+	at org.h2.command.dml.Select.queryWithoutCache(Select.java:839)
+	at org.h2.command.dml.Query.queryWithoutCacheLazyCheck(Query.java:201)
+	at org.h2.command.dml.Query.query(Query.java:489)
+	at org.h2.command.dml.Query.query(Query.java:451)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:285)
+	at org.h2.command.Command.executeQuery(Command.java:195)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:222)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+2020-10-04 00:13:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TERMS(SERIE INT,
+	NBR INT,
+	TERM1 NUMERIC(20,10)
+        TERM2[*] NUMERIC(20,10)
+)"; expected "FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE TERMS(SERIE INT,
+	NBR INT,
+	TERM1 NUMERIC(20,10)
+        TERM2 NUMERIC(20,10)
+) [42001-200]
+2020-10-04 00:13:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" not found; SQL statement:
+INSERT INTO TERMS (SERIE,NBR,TERM1,TERM2) VALUES(1,1,20.1234567890,123.4567890) [42102-200]
+2020-10-04 00:13:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" not found; SQL statement:
+INSERT INTO TERMS (SERIE,NBR,TERM1,TERM2) VALUES(1,2,30.0987654321,67432.7865432) [42102-200]
+2020-10-04 00:13:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" not found; SQL statement:
+SELECT * FROM TERMS ORDER BY SERIE ASC, NBR ASC [42102-200]
+2020-10-04 00:13:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" not found; SQL statement:
+SELECT SUM(TERM1) FROM TERMS [42102-200]
+2020-10-04 00:39:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAL_TIME" not found; SQL statement:
+INSERT INTO CAL_TIME(TIME) VALUES(-0.13400608189) [42102-200]
+2020-10-04 00:47:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO TIME_TAB (TIME,TIME2.[*]TIME3,TIM4)
+SELECT TIME, TIME * TIME, TIME * TIME * TIME
+
+
+DROP TABLE IF EXISTS TERMS"; expected ",, )"; SQL statement:
+INSERT INTO TIME_TAB (TIME,TIME2.TIME3,TIM4)
+SELECT TIME, TIME * TIME, TIME * TIME * TIME
+
+
+DROP TABLE IF EXISTS TERMS [42001-200]
+2020-10-04 00:47:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TERMS" already exists; SQL statement:
+CREATE TABLE TERMS(SERIE INT,
+	NBR INT,
+	TERM1 NUMERIC(20,10),
+        TERM2 NUMERIC(20,10)
+) [42101-200]
+2020-10-04 00:48:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Function "POW" not found; SQL statement:
+//INSERT INTO TIME_TAB (TIME,TIME2.TIME3,TIM4)
+SELECT POW(TIME,2)
+FROM CALC_TIME [90022-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.readJavaFunction(Parser.java:3565)
+	at org.h2.command.Parser.readFunction(Parser.java:3770)
+	at org.h2.command.Parser.readTerm(Parser.java:4305)
+	at org.h2.command.Parser.readFactor(Parser.java:3343)
+	at org.h2.command.Parser.readSum(Parser.java:3330)
+	at org.h2.command.Parser.readConcat(Parser.java:3305)
+	at org.h2.command.Parser.readCondition(Parser.java:3108)
+	at org.h2.command.Parser.readExpression(Parser.java:3059)
+	at org.h2.command.Parser.parseSelectExpressions(Parser.java:2931)
+	at org.h2.command.Parser.parseSelect(Parser.java:2952)
+	at org.h2.command.Parser.parseQuerySub(Parser.java:2817)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:2649)
+	at org.h2.command.Parser.parseQuery(Parser.java:2620)
+	at org.h2.command.Parser.parsePrepared(Parser.java:868)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+2020-10-04 00:50:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO TIME_TAB (TIME,TIME2.[*]TIME3,TIM4)
+SELECT TIME
+, POWER(TIME,2)
+, POWER(TIME,3)
+, POWER(TIME,4)
+FROM CALC_TIME"; expected ",, )"; SQL statement:
+INSERT INTO TIME_TAB (TIME,TIME2.TIME3,TIM4)
+SELECT TIME
+, POWER(TIME,2)
+, POWER(TIME,3)
+, POWER(TIME,4)
+FROM CALC_TIME [42001-200]
+2020-10-04 00:50:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO TIME_TAB (TIME,TIME2.[*]TIME3,TIME4)
+SELECT TIME
+, POWER(TIME,2)
+, POWER(TIME,3)
+, POWER(TIME,4)
+FROM CALC_TIME"; expected ",, )"; SQL statement:
+INSERT INTO TIME_TAB (TIME,TIME2.TIME3,TIME4)
+SELECT TIME
+, POWER(TIME,2)
+, POWER(TIME,3)
+, POWER(TIME,4)
+FROM CALC_TIME [42001-200]
+2020-10-04 13:52:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MILESTONE" not found; SQL statement:
+SELECT * FROM MILESTONE WHERE ID=? [42102-200]
+2020-10-04 13:55:45 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Eigenaar/Documents/Planetarium/database/sun.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at Test.main(Test.java:20)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Eigenaar/Documents/Planetarium/database/sun.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Eigenaar/Documents/Planetarium/database/sun.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2020-10-04 13:56:14 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Eigenaar/Documents/Planetarium/database/sun.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at Test.main(Test.java:20)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Eigenaar/Documents/Planetarium/database/sun.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Eigenaar/Documents/Planetarium/database/sun.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2020-10-04 14:05:26 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Eigenaar/Documents/Planetarium/database/sun.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at Test.main(Test.java:25)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Eigenaar/Documents/Planetarium/database/sun.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Eigenaar/Documents/Planetarium/database/sun.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2020-10-04 17:51:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "NBR" not found; SQL statement:
+SELECT MAX(NBR) MAX_NBR WHERE SERIE=? [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.expression.aggregate.AbstractAggregate.optimize(AbstractAggregate.java:92)
+	at org.h2.expression.aggregate.Aggregate.optimize(Aggregate.java:705)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at Test.main(Test.java:34)
+2020-10-04 17:51:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "NBR" not found; SQL statement:
+SELECT MAX(NBR) MAX_NBR WHERE SERIE=? [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.expression.aggregate.AbstractAggregate.optimize(AbstractAggregate.java:92)
+	at org.h2.expression.aggregate.Aggregate.optimize(Aggregate.java:705)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at Test.main(Test.java:34)
+2020-10-04 17:52:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "NBR" not found; SQL statement:
+SELECT MAX(NBR) MAX_NBR WHERE SERIE=? [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.expression.aggregate.AbstractAggregate.optimize(AbstractAggregate.java:92)
+	at org.h2.expression.aggregate.Aggregate.optimize(Aggregate.java:705)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at Test.main(Test.java:34)
+2020-10-04 17:59:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+INSERT INTO TERMS (SERIE,NBR,TERM1,TERM2) VALUES(?,?,?,?) [90002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.Prepared.query(Prepared.java:231)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:285)
+	at org.h2.command.Command.executeQuery(Command.java:195)
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:114)
+	at Test.main(Test.java:52)
+2020-10-11 14:31:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "
+
+
+
+INSERT INTO LUNAR (TYPE,SERIE,NBR,TERM1,TERM2,TERM3.[*]TERM4,TERM5,TERM6) VALUES (""Longitude"",""S0v"",1,6.28877383,134.9634114,477198.8676313,89.97,14.348,-6.797)"; expected ",, )"; SQL statement:
+
+
+
+
+INSERT INTO LUNAR (TYPE,SERIE,NBR,TERM1,TERM2,TERM3.TERM4,TERM5,TERM6) VALUES ("Longitude","S0v",1,6.28877383,134.9634114,477198.8676313,89.97,14.348,-6.797) [42001-200]
+2020-10-11 14:32:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "Longitude" not found; SQL statement:
+
+
+
+
+INSERT INTO LUNAR (TYPE,SERIE,NBR,TERM1,TERM2,TERM3,TERM4,TERM5,TERM6) VALUES ("Longitude","S0v",1,6.28877383,134.9634114,477198.8676313,89.97,14.348,-6.797) [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Insert.prepare(Insert.java:327)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.tools.RunScript.execute(RunScript.java:172)
+	at Test.main(Test.java:58)
+2020-10-11 14:44:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TYPE" not found; SQL statement:
+SELECT TYPE,SERIE,NBR,TERM1,TERM2,TERM3,TERM4,TERM5,TERM6 FROM TERMS WHERE TYPE=? ORDER BY SERIE ASC, NBR ASC [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at Test.main(Test.java:67)
+2020-10-11 14:45:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TYPE" not found [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3169)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3268)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:316)
+	at Test.main(Test.java:73)
+2020-10-11 14:46:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TYPE" not found [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3169)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3268)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:316)
+	at Test.main(Test.java:73)
+2020-10-11 14:47:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TYPE" not found [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3169)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3268)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:316)
+	at Test.main(Test.java:73)
+2020-10-11 14:50:03 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Eigenaar/Documents/Planetarium/database/sun.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at Test.main(Test.java:14)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Eigenaar/Documents/Planetarium/database/sun.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Eigenaar/Documents/Planetarium/database/sun.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2020-10-11 14:50:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TYPE" not found [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3169)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3268)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:316)
+	at Test.main(Test.java:73)
+2020-10-11 14:52:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "S0v" [22018-200]
+2020-10-11 15:15:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT TYPE
+, SERIE
+, SUM ()[*] OVER (PARTITION BY TYPE, SERIE ORDER BY 'A') AS MY_SUM 
+FROM LUNAR"; expected "DISTINCT, ALL, NOT, EXISTS, INTERSECTS, UNIQUE"; SQL statement:
+SELECT TYPE
+, SERIE
+, SUM () OVER (PARTITION BY TYPE, SERIE ORDER BY 'A') AS MY_SUM 
+FROM LUNAR [42001-200]
+2020-10-11 16:32:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "SERIE" must be in the GROUP BY list; SQL statement:
+SELECT TYPE,SERIE,count(*) COUNT FROM LUNAR WHERE 1=1 ORDER BY TYPE ASC, SERIE ASC [90016-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.updateAggregate(ExpressionColumn.java:182)
+	at org.h2.command.dml.Select.updateAgg(Select.java:545)
+	at org.h2.command.dml.Select.gatherGroup(Select.java:525)
+	at org.h2.command.dml.Select.queryGroup(Select.java:487)
+	at org.h2.command.dml.Select.queryWithoutCache(Select.java:839)
+	at org.h2.command.dml.Query.queryWithoutCacheLazyCheck(Query.java:201)
+	at org.h2.command.dml.Query.query(Query.java:489)
+	at org.h2.command.dml.Query.query(Query.java:451)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:285)
+	at org.h2.command.Command.executeQuery(Command.java:195)
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:114)
+	at Test.main(Test.java:91)
+2020-10-21 23:55:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STARS(ID INT,
+	CONSTELLATION VARCHAR(255),
+	STAR_NAME VARCHAR(255),
+	HOUR VARCHAR(2),
+	MINUTES VARCHAR(2),
+	SECONDS VARCHAR(30),
+	DEGREES VARCHAR(2),
+	ARC_MINUTES VARCHAR(2),
+	ARC_SECONDS VARCHAR(30).[*]
+	MAGNITUDE VARCHAR(6),
+	SPECTRUM VARCHAR(2),
+	MULTI VARCHAR(1)
+)"; expected "FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE STARS(ID INT,
+	CONSTELLATION VARCHAR(255),
+	STAR_NAME VARCHAR(255),
+	HOUR VARCHAR(2),
+	MINUTES VARCHAR(2),
+	SECONDS VARCHAR(30),
+	DEGREES VARCHAR(2),
+	ARC_MINUTES VARCHAR(2),
+	ARC_SECONDS VARCHAR(30).
+	MAGNITUDE VARCHAR(6),
+	SPECTRUM VARCHAR(2),
+	MULTI VARCHAR(1)
+) [42001-200]
+2020-10-21 23:55:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO STARS (ID, CONSTELLATION, STAR_NAME, HOUR, MINUTES, SECONDS, DEGREES, ARC_MINUTES, ARC_SECONDS, MAGNITUDE, SPECTRUM, MULTI) VALUES(1, 'Orion, 'Rigel', '5','14','32.27','-8','12','5.9','0.18','3','d[*]');"; SQL statement:
+INSERT INTO STARS (ID, CONSTELLATION, STAR_NAME, HOUR, MINUTES, SECONDS, DEGREES, ARC_MINUTES, ARC_SECONDS, MAGNITUDE, SPECTRUM, MULTI) VALUES(1, 'Orion, 'Rigel', '5','14','32.27','-8','12','5.9','0.18','3','d'); [42000-200]
+2020-10-21 23:55:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STARS(ID INT,
+	CONSTELLATION VARCHAR(255),
+	STAR_NAME VARCHAR(255),
+	HOUR VARCHAR(2),
+	MINUTES VARCHAR(2),
+	SECONDS VARCHAR(30),
+	DEGREES VARCHAR(2),
+	ARC_MINUTES VARCHAR(2),
+	ARC_SECONDS VARCHAR(30).[*]
+	MAGNITUDE VARCHAR(6),
+	SPECTRUM VARCHAR(2),
+	MULTI VARCHAR(1)
+)"; expected "FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE STARS(ID INT,
+	CONSTELLATION VARCHAR(255),
+	STAR_NAME VARCHAR(255),
+	HOUR VARCHAR(2),
+	MINUTES VARCHAR(2),
+	SECONDS VARCHAR(30),
+	DEGREES VARCHAR(2),
+	ARC_MINUTES VARCHAR(2),
+	ARC_SECONDS VARCHAR(30).
+	MAGNITUDE VARCHAR(6),
+	SPECTRUM VARCHAR(2),
+	MULTI VARCHAR(1)
+) [42001-200]
+2020-10-21 23:55:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO STARS (ID, CONSTELLATION, STAR_NAME, HOUR, MINUTES, SECONDS, DEGREES, ARC_MINUTES, ARC_SECONDS, MAGNITUDE, SPECTRUM, MULTI) VALUES(1, 'Orion, 'Rigel', '5','14','32.27','-8','12','5.9','0.18','3','d[*]');"; SQL statement:
+INSERT INTO STARS (ID, CONSTELLATION, STAR_NAME, HOUR, MINUTES, SECONDS, DEGREES, ARC_MINUTES, ARC_SECONDS, MAGNITUDE, SPECTRUM, MULTI) VALUES(1, 'Orion, 'Rigel', '5','14','32.27','-8','12','5.9','0.18','3','d'); [42000-200]
+2020-10-21 23:56:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STARS(ID INT,
+	CONSTELLATION VARCHAR(255),
+	STAR_NAME VARCHAR(255),
+	HOUR VARCHAR(2),
+	MINUTES VARCHAR(2),
+	SECONDS VARCHAR(30),
+	DEGREES VARCHAR(2),
+	ARC_MINUTES VARCHAR(2),
+	ARC_SECONDS VARCHAR(30).[*]
+	MAGNITUDE VARCHAR(6),
+	SPECTRUM VARCHAR(2),
+	MULTI VARCHAR(1)
+)"; expected "FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE STARS(ID INT,
+	CONSTELLATION VARCHAR(255),
+	STAR_NAME VARCHAR(255),
+	HOUR VARCHAR(2),
+	MINUTES VARCHAR(2),
+	SECONDS VARCHAR(30),
+	DEGREES VARCHAR(2),
+	ARC_MINUTES VARCHAR(2),
+	ARC_SECONDS VARCHAR(30).
+	MAGNITUDE VARCHAR(6),
+	SPECTRUM VARCHAR(2),
+	MULTI VARCHAR(1)
+) [42001-200]
+2020-10-21 23:56:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STARS(ID INT,
+	CONSTELLATION VARCHAR(255),
+	STAR_NAME VARCHAR(255),
+	HOUR VARCHAR(2),
+	MINUTES VARCHAR(2),
+	SECONDS VARCHAR(30),
+	DEGREES VARCHAR(2),
+	ARC_MINUTES VARCHAR(2),
+	ARC_SECONDS VARCHAR(30).[*]
+	MAGNITUDE VARCHAR(6),
+	SPECTRUM VARCHAR(2),
+	MULTI VARCHAR(1)
+)"; expected "FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE STARS(ID INT,
+	CONSTELLATION VARCHAR(255),
+	STAR_NAME VARCHAR(255),
+	HOUR VARCHAR(2),
+	MINUTES VARCHAR(2),
+	SECONDS VARCHAR(30),
+	DEGREES VARCHAR(2),
+	ARC_MINUTES VARCHAR(2),
+	ARC_SECONDS VARCHAR(30).
+	MAGNITUDE VARCHAR(6),
+	SPECTRUM VARCHAR(2),
+	MULTI VARCHAR(1)
+) [42001-200]
+2020-10-21 23:58:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO STARS (ID, CONSTELLATION, STAR_NAME, HOUR, MINUTES, SECONDS, DEGREES, ARC_MINUTES, ARC_SECONDS, MAGNITUDE, SPECTRUM, MULTI) VALUES(1, 'Orion, 'Rigel', '5','14','32.27','-8','12','5.9','0.18','3','d[*]');"; SQL statement:
+INSERT INTO STARS (ID, CONSTELLATION, STAR_NAME, HOUR, MINUTES, SECONDS, DEGREES, ARC_MINUTES, ARC_SECONDS, MAGNITUDE, SPECTRUM, MULTI) VALUES(1, 'Orion, 'Rigel', '5','14','32.27','-8','12','5.9','0.18','3','d'); [42000-200]
+2020-10-22 00:04:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT *.[*]FROM STARS"; SQL statement:
+SELECT *.FROM STARS [42000-200]
+2020-10-22 00:10:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+INSERT INTO STARS (ID, CONSTELLATION, STAR_NAME, HOUR, MINUTES, SECONDS, DEGREES, ARC_MINUTES, ARC_SECONDS, MAGNITUDE, SPECTRUM, MULTI) VALUES(5,'Orion','Alnitak A','5;40','45.52','-1','56','33.3','1.88','5','d') [21002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:319)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-10-22 00:18:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DEGREES VARCHAR(2)": "'-10' (3)"; SQL statement:
+INSERT INTO STARS (ID, CONSTELLATION, STAR_NAME, HOUR, MINUTES, SECONDS, DEGREES, ARC_MINUTES, ARC_SECONDS, MAGNITUDE, SPECTRUM, MULTI) VALUES(20,'Test','dm10','10','30','0','-10','0','0','5','0','s') [22001-200]
+2020-10-22 00:18:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DEGREES VARCHAR(2)": "'100' (3)"; SQL statement:
+INSERT INTO STARS (ID, CONSTELLATION, STAR_NAME, HOUR, MINUTES, SECONDS, DEGREES, ARC_MINUTES, ARC_SECONDS, MAGNITUDE, SPECTRUM, MULTI) VALUES(21,'Test','o10','5','30','0','100','0','0','5','0','s') [22001-200]
+2020-10-22 00:18:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DEGREES VARCHAR(2)": "'-10' (3)"; SQL statement:
+INSERT INTO STARS (ID, CONSTELLATION, STAR_NAME, HOUR, MINUTES, SECONDS, DEGREES, ARC_MINUTES, ARC_SECONDS, MAGNITUDE, SPECTRUM, MULTI) VALUES(32,'Test','. -10','5','30','0','-10','0','0','5','0','s') [22001-200]
+2020-10-22 00:22:42 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/janfe/Documents/Planetarium/database/sun.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at Test.main(Test.java:38)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/janfe/Documents/Planetarium/database/sun.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/janfe/Documents/Planetarium/database/sun.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2020-10-22 00:38:45 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/janfe/Documents/Planetarium/database/sun.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at Test.main(Test.java:38)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/janfe/Documents/Planetarium/database/sun.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/janfe/Documents/Planetarium/database/sun.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Ursa Major',50,48) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Ursa Major',48,47) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Ursa Major',47,46) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Ursa Major',46,45) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Ursa Major',45,44) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Ursa Major',44,43) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Ursa Major',43,46) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Cassiopeia',52',51);
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Cassiopeia',51',53) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Cassiopeia',53',54);
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Cassiopeia',54',55) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Orion',6,1) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Orion',1,7) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Orion',6,5) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Orion',2,5) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Orion',2,8) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Orion',8,3) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Orion',3,7) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Orion',5,4) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Orion',4,7) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Ursa Minor',9,12) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Ursa Minor',12,13) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Ursa Minor',13,14) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Ursa Minor',14,18) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Ursa Minor',14,10) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Ursa Minor',10,11) [42102-200]
+2020-10-24 13:21:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSTELLATION" not found; SQL statement:
+INSERT INTO CONSTELLATION (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Ursa Minor',18,11) [42102-200]
+2020-10-24 13:22:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO CONSTELLATIONS (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Cassiopeia',52',51);
+INSERT INTO CONSTELLATIONS (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('[*]CASSIOPEIA',51',53)"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO CONSTELLATIONS (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Cassiopeia',52',51);
+INSERT INTO CONSTELLATIONS (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Cassiopeia',51',53) [42001-200]
+2020-10-24 13:22:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO CONSTELLATIONS (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Cassiopeia',53',54);
+INSERT INTO CONSTELLATIONS (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('[*]CASSIOPEIA',54',55)"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO CONSTELLATIONS (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Cassiopeia',53',54);
+INSERT INTO CONSTELLATIONS (CONSTELLATION, START_STAR_ID, END_STAR_ID) VALUES('Cassiopeia',54',55) [42001-200]
+2020-10-28 21:18:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "STARS[*]"; expected "SET, SAVEPOINT, SCRIPT, SHUTDOWN, SHOW"; SQL statement:
+STARS [42001-200]
+2020-11-13 17:20:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM STARS 
+
+SELECT[*] * FROM CONSTELLATIONS"; SQL statement:
+SELECT * FROM STARS 
+
+SELECT * FROM CONSTELLATIONS [42000-200]
